@@ -1,0 +1,13 @@
+services:
+  tensorflow-gpu:
+    privileged: true
+    image: tensorflow/tensorflow:latest-gpu-jupyter
+    ports:
+      - "8888:8888"
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - capabilities: [gpu]
+    volumes:
+      - ${PWD}:/tf/sa-experiments
