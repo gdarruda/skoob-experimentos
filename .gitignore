@@ -1,7 +1,6 @@
 .ipynb_checkpoints/
 
 corpus/
-corpus.tar.gz
 logs/
 
 *.svg
